@@ -18,4 +18,5 @@
     <string name="division">/</string>
     <string name="multiplication">*</string>
     <string name="subtraction">-</string>
+    <string name="todo">TODO</string>
 </resources>
