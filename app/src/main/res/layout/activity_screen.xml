@@ -7,24 +7,23 @@
     tools:context=".MainActivity">
 
 
-    <include
-        android:id="@+id/include"
-        layout="@layout/activity_screen"
-        android:layout_width="0dp"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_banner_foreground"
+        android:contentDescription="@string/todo" />
 
-
-    <include
-        android:id="@+id/include"
-        layout="@layout/activity_buttons"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
