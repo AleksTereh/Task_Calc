@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Calc</string>
+    <string name="app_name">Калькулятор</string>
     <string name="key_3">3</string>
     <string name="key_0">0</string>
     <string name="key_7">7</string>

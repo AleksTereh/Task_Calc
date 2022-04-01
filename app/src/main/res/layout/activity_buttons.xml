@@ -12,7 +12,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/key_0"
-        android:textSize="25sp"
+        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnPoint"
         app:layout_constraintStart_toStartOf="parent" />
@@ -23,7 +23,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/point"
-        android:textSize="25sp"
+        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnEqually"
         app:layout_constraintStart_toEndOf="@+id/btn0" />
@@ -33,7 +33,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/equally"
-        android:textSize="25sp"
+        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnAddition"
         app:layout_constraintStart_toEndOf="@+id/btnPoint" />
@@ -43,7 +43,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/addition"
-        android:textSize="25sp"
+        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnEqually" />
@@ -53,7 +53,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/key_7"
-        android:textSize="25sp"
+        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btn0"
         app:layout_constraintEnd_toStartOf="@+id/btn8"
         app:layout_constraintStart_toStartOf="parent" />
@@ -63,7 +63,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/key_8"
-        android:textSize="25sp"
+        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btnPoint"
         app:layout_constraintEnd_toStartOf="@+id/btn9"
         app:layout_constraintStart_toEndOf="@+id/btn7" />
@@ -73,7 +73,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/key_9"
-        android:textSize="25sp"
+        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btnEqually"
         app:layout_constraintEnd_toStartOf="@+id/btnSubtraction"
         app:layout_constraintStart_toEndOf="@+id/btn8" />
@@ -83,7 +83,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/subtraction"
-        android:textSize="25sp"
+        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btnAddition"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn9" />
@@ -93,7 +93,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/key_4"
-        android:textSize="25sp"
+        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btn7"
         app:layout_constraintEnd_toStartOf="@+id/btn5"
         app:layout_constraintStart_toStartOf="parent" />
@@ -103,7 +103,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/key_5"
-        android:textSize="25sp"
+        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btn8"
         app:layout_constraintEnd_toStartOf="@+id/btn6"
         app:layout_constraintStart_toEndOf="@+id/btn4" />
@@ -113,7 +113,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/key_6"
-        android:textSize="25sp"
+        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btn9"
         app:layout_constraintEnd_toStartOf="@+id/btnMultiplication"
         app:layout_constraintStart_toEndOf="@+id/btn5" />
@@ -123,7 +123,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/multiplication"
-        android:textSize="25sp"
+        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btnSubtraction"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn6" />
@@ -133,7 +133,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/key_1"
-        android:textSize="25sp"
+        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btn4"
         app:layout_constraintEnd_toStartOf="@+id/btn2"
         app:layout_constraintStart_toStartOf="parent" />
@@ -143,7 +143,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/key_2"
-        android:textSize="25sp"
+        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btn5"
         app:layout_constraintEnd_toStartOf="@+id/btn3"
         app:layout_constraintStart_toEndOf="@+id/btn1" />
@@ -153,7 +153,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/key_3"
-        android:textSize="25sp"
+        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btn6"
         app:layout_constraintEnd_toStartOf="@+id/btnDivision"
         app:layout_constraintStart_toEndOf="@+id/btn2" />
@@ -163,7 +163,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/division"
-        android:textSize="25sp"
+        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btnMultiplication"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn3" />
@@ -173,7 +173,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/clear"
-        android:textSize="25sp"
+        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btn1"
         app:layout_constraintEnd_toEndOf="@+id/btn2"
         app:layout_constraintStart_toStartOf="@+id/btn1" />
@@ -183,7 +183,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/backspace"
-        android:textSize="25sp"
+        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btnDivision"
         app:layout_constraintEnd_toEndOf="@+id/btnDivision"
         app:layout_constraintStart_toStartOf="@+id/btn3" />
