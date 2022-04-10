@@ -19,4 +19,8 @@
     <string name="multiplication">*</string>
     <string name="subtraction">-</string>
     <string name="todo">TODO</string>
+    <string name="theme_one" translatable="false">Theme_One</string>
+    <string name="theme_two" translatable="false">Theme_Two</string>
+    <string name="preferens" translatable="false">preferens</string>
+    <string name="open_link" translatable="false">open link</string>
 </resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CalcButton" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">@dimen/radius_10</item>
+        <item name="android:textSize">@dimen/size_25txt</item>
+        <item name="android:backgroundTint">@android:color/holo_orange_dark</item>
+        <item name="android:textColor">@color/purple_500</item>
+    </style>
+
+    <style name="CalcButton.Action">
+        <item name="android:backgroundTint">?actionButtonColor</item>
+    </style>
+
+    <style name="CalcButton.Red">
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="colorPrimary">#e91e63</item>
+        <item name="colorPrimaryDark">#b0003a</item>
+        <item name="colorAccent">#ff6090</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+
+</resources>

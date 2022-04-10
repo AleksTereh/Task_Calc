@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="size_30">30sp</dimen>
-    <dimen name="size_25">25sp</dimen>
+    <dimen name="size_25txt">25sp</dimen>
+    <dimen name="radius_10">10dp</dimen>
+    <dimen name="textSize">30sp</dimen>
 </resources>

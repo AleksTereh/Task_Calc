@@ -4,18 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@android:drawable/title_bar">
+    android:background="@android:drawable/title_bar"
+    tools:context=".ui.MainActivity">
 
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn0"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_orange_dark"
         android:text="@string/key_0"
-        android:textColor="@color/purple_500"
-        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnPoint"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,10 +23,7 @@
         android:id="@+id/btnPoint"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_orange_dark"
         android:text="@string/point"
-        android:textColor="@color/purple_500"
-        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnEqually"
         app:layout_constraintStart_toEndOf="@+id/btn0"
@@ -39,10 +33,7 @@
         android:id="@+id/btnEqually"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_orange_dark"
         android:text="@string/equally"
-        android:textColor="@color/purple_500"
-        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnAddition"
         app:layout_constraintStart_toEndOf="@+id/btnPoint"
@@ -50,12 +41,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnAddition"
+        style="@style/CalcButton.Action"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/darker_gray"
         android:text="@string/addition"
-        android:textColor="@color/purple_500"
-        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnEqually"
@@ -65,10 +54,7 @@
         android:id="@+id/btn7"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_orange_dark"
         android:text="@string/key_7"
-        android:textColor="@color/purple_500"
-        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btn0"
         app:layout_constraintEnd_toStartOf="@+id/btn8"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,34 +64,28 @@
         android:id="@+id/btn8"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_orange_dark"
         android:text="@string/key_8"
-        android:textColor="@color/purple_500"
-        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btnPoint"
         app:layout_constraintEnd_toStartOf="@+id/btn9"
-        app:layout_constraintStart_toEndOf="@+id/btn7" />
+        app:layout_constraintStart_toEndOf="@+id/btn7"
+        tools:ignore="TextContrastCheck" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn9"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_orange_dark"
         android:text="@string/key_9"
-        android:textColor="@color/purple_500"
-        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btnEqually"
         app:layout_constraintEnd_toStartOf="@+id/btnSubtraction"
-        app:layout_constraintStart_toEndOf="@+id/btn8" />
+        app:layout_constraintStart_toEndOf="@+id/btn8"
+        tools:ignore="TextContrastCheck" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSubtraction"
+        style="@style/CalcButton.Action"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/darker_gray"
         android:text="@string/subtraction"
-        android:textColor="@color/purple_500"
-        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btnAddition"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn9"
@@ -115,10 +95,7 @@
         android:id="@+id/btn4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_orange_dark"
         android:text="@string/key_4"
-        android:textColor="@color/purple_500"
-        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btn7"
         app:layout_constraintEnd_toStartOf="@+id/btn5"
         app:layout_constraintStart_toStartOf="parent"
@@ -128,10 +105,7 @@
         android:id="@+id/btn5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_orange_dark"
         android:text="@string/key_5"
-        android:textColor="@color/purple_500"
-        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btn8"
         app:layout_constraintEnd_toStartOf="@+id/btn6"
         app:layout_constraintStart_toEndOf="@+id/btn4"
@@ -141,34 +115,28 @@
         android:id="@+id/btn6"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_orange_dark"
         android:text="@string/key_6"
-        android:textColor="@color/purple_500"
-        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btn9"
         app:layout_constraintEnd_toStartOf="@+id/btnMultiplication"
-        app:layout_constraintStart_toEndOf="@+id/btn5" />
+        app:layout_constraintStart_toEndOf="@+id/btn5"
+        tools:ignore="TextContrastCheck" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnMultiplication"
+        style="@style/CalcButton.Action"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/darker_gray"
         android:text="@string/multiplication"
-        android:textColor="@color/purple_500"
-        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btnSubtraction"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn6" />
+        app:layout_constraintStart_toEndOf="@+id/btn6"
+        tools:ignore="TextContrastCheck" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_orange_dark"
         android:text="@string/key_1"
-        android:textColor="@color/purple_500"
-        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btn4"
         app:layout_constraintEnd_toStartOf="@+id/btn2"
         app:layout_constraintStart_toStartOf="parent"
@@ -178,10 +146,7 @@
         android:id="@+id/btn2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_orange_dark"
         android:text="@string/key_2"
-        android:textColor="@color/purple_500"
-        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btn5"
         app:layout_constraintEnd_toStartOf="@+id/btn3"
         app:layout_constraintStart_toEndOf="@+id/btn1"
@@ -191,25 +156,21 @@
         android:id="@+id/btn3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_orange_dark"
         android:text="@string/key_3"
-        android:textColor="@color/purple_500"
-        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btn6"
         app:layout_constraintEnd_toStartOf="@+id/btnDivision"
         app:layout_constraintStart_toEndOf="@+id/btn2" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnDivision"
+        style="@style/CalcButton.Action"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/darker_gray"
         android:text="@string/division"
-        android:textColor="@color/purple_500"
-        android:textSize="@dimen/size_25"
         app:layout_constraintBottom_toTopOf="@+id/btnMultiplication"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn3" />
+        app:layout_constraintStart_toEndOf="@+id/btn3"
+        tools:ignore="TextContrastCheck" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnСlear"
@@ -218,11 +179,13 @@
         android:backgroundTint="@android:color/holo_red_dark"
         android:text="@string/clear"
         android:textColor="@color/nen"
-        android:textSize="@dimen/size_25"
+        android:textSize="@dimen/size_25txt"
         android:textStyle="bold"
+        app:cornerRadius="15dp"
         app:layout_constraintBottom_toTopOf="@+id/btn1"
         app:layout_constraintEnd_toEndOf="@+id/btn2"
-        app:layout_constraintStart_toStartOf="@+id/btn1" />
+        app:layout_constraintStart_toStartOf="@+id/btn1"
+        tools:ignore="TextContrastCheck" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnBack"
@@ -231,11 +194,13 @@
         android:backgroundTint="@android:color/holo_red_dark"
         android:text="@string/backspace"
         android:textColor="@color/nen"
-        android:textSize="@dimen/size_25"
+        android:textSize="@dimen/size_25txt"
         android:textStyle="bold"
+        app:cornerRadius="15dp"
         app:layout_constraintBottom_toTopOf="@+id/btnDivision"
         app:layout_constraintEnd_toEndOf="@+id/btnDivision"
-        app:layout_constraintStart_toStartOf="@+id/btn3" />
+        app:layout_constraintStart_toStartOf="@+id/btn3"
+        tools:ignore="TextContrastCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
