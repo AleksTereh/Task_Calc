@@ -6,9 +6,11 @@ import androidx.annotation.StyleRes;
 import ru.alekstereh.task_calc.R;
 
 public enum Theme {
+
     //R.string.Theme.......... не распознаёт
-    ONE(R.string.theme_one, "THEME_ONE");  //в ходе колдовства key поменялся на title
-    TWO(R.string.theme_two, "THEME_TWO"); //не вставляется автоматически key  как на строке выше
+    ONE(R.string.Theme.Task_Calc, R.string.theme_one, "THEME_ONE");
+    //R.string.Theme.......... не распознаёт, и TWO
+    TWO(R.string.Theme.Task_Calc.V2, "THEME_TWO"); //не вставляется автоматически key  как на строке выше
 
     private @StyleRes
     final int theme;

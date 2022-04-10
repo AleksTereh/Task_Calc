@@ -1,19 +1,18 @@
-package ru.alekstereh.task_calc;
+package ru.alekstereh.task_calc.ui;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.activity.result.ActivityResult;
-import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import ru.alekstereh.task_calc.R;
 import ru.alekstereh.task_calc.storage.Theme;
 import ru.alekstereh.task_calc.storage.ThemeStorage;
 
@@ -36,18 +35,15 @@ public class MainActivity extends AppCompatActivity {
 
         Theme savedTheme = storage.getTheme();
 
-        ActivityResultLauncher<Intent> launcher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
-            @Override
-            public void onActivityResult(ActivityResult result) {
-                if (result.getResultCode() == Activity.RESULT_OK) {
-                    Intent data = result.getData();
+        ActivityResultLauncher<Intent> launcher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
+            if (result.getResultCode() == Activity.RESULT_OK) {
+                Intent data = result.getData();
 
-                    Theme chosenTheme = (Theme) data.getSerializableExtra(ThemeSelectionActivity.CHOSEN_THEME);
+                Theme chosenTheme = (Theme) data.getSerializableExtra(ThemeSelectionActivity.CHOSEN_THEME);
 
-                    storage.saveTheme(chosenTheme);
+                storage.saveTheme(chosenTheme);
 
-                    recreate();
-                }
+                recreate();
             }
         });
 
@@ -59,6 +55,23 @@ public class MainActivity extends AppCompatActivity {
         operator = '1';
         memory = 0;
         display = findViewById(R.id.txtView);
+
+
+        findViewById(R.id.preferens).setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, ThemeSelectionActivity.class);
+            intent.putExtra(ThemeSelectionActivity.SELECTED_THEME, savedTheme);
+
+            launcher.launch(intent);
+        });
+
+        findViewById(R.id.link).setOnClickListener(view -> {
+            Uri uri = Uri.parse("some://yandex.ru");
+
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(uri);
+
+            startActivity(Intent.createChooser(intent, null));
+        });
 
     }
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
 
     <include
@@ -27,20 +27,22 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/theme_1"
+        android:id="@+id/preferens"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/theme_one"
+        android:text="@string/preferens"
         app:layout_constraintBottom_toTopOf="@+id/include2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/theme_2"
-        android:layout_width="wrap_content"
+        android:id="@+id/link"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/theme_two"
-        app:layout_constraintBottom_toTopOf="@+id/include2"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:text="@string/open_link"
+        app:layout_constraintBottom_toTopOf="@+id/preferens"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
