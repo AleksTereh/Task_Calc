@@ -1,11 +1,21 @@
 package ru.alekstereh.task_calc;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import ru.alekstereh.task_calc.storage.Theme;
+import ru.alekstereh.task_calc.storage.ThemeStorage;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,9 +27,33 @@ public class MainActivity extends AppCompatActivity {
     private double memory;
     private char operator;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        ThemeStorage storage = ThemeStorage.getInstance(getApplicationContext());
+
+        Theme savedTheme = storage.getTheme();
+
+        ActivityResultLauncher<Intent> launcher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
+            @Override
+            public void onActivityResult(ActivityResult result) {
+                if (result.getResultCode() == Activity.RESULT_OK) {
+                    Intent data = result.getData();
+
+                    Theme chosenTheme = (Theme) data.getSerializableExtra(ThemeSelectionActivity.CHOSEN_THEME);
+
+                    storage.saveTheme(chosenTheme);
+
+                    recreate();
+                }
+            }
+        });
+
+
+        setTheme(savedTheme.getTheme());
+
         setContentView(R.layout.activity_main);
         initButton();
         operator = '1';
@@ -190,4 +224,5 @@ public class MainActivity extends AppCompatActivity {
 
         display.setText(result);
     }
+
 }
